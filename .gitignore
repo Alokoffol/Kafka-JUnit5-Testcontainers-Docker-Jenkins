@@ -1,0 +1,36 @@
+# Compiled
+target/
+*.class
+
+# Allure
+allure-results/
+allure-report/
+.allure/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+.m2/
+
+# Testcontainers
+testcontainers.properties
+docker-java.properties
+
+# Local config
+*.local.properties
