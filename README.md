@@ -1,6 +1,6 @@
 # Kafka-JUnit5-Testcontainers-Docker-Jenkins
 
-## 📖 Описание
+## Описание
 
 Проект для тестирования **Apache Kafka** с использованием **JUnit 5**, **Testcontainers** и **Jenkins**.
 
@@ -11,7 +11,7 @@
 - ✅ Интеграцию с Allure отчетами
 - ✅ Jenkins Pipeline
 
-## 🛠 Технологии
+## Технологии
 
 | Технология | Назначение |
 |------------|------------|
@@ -30,7 +30,7 @@ mvn clean test
 
 ```
 ## Структура проекта
-
+```
 src/test/java/
 ├── base/KafkaTestBase.java
 ├── consumer/MessageConsumer.java
@@ -39,7 +39,7 @@ src/test/java/
 ├── KafkaE2ETest.java
 ├── KafkaConsumerTest.java
 └── KafkaProducerTest.java
-
+```
 
 ## Allure отчет
 

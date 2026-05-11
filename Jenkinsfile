@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout scm
-                echo '✅ Код скачан'
+                echo 'Код скачан'
             }
         }
 
@@ -33,13 +33,13 @@ pipeline {
 
     post {
         always {
-            echo '📊 Тесты завершены'
+            echo 'Тесты завершены'
         }
         success {
-            echo '✅ Все тесты прошли успешно!'
+            echo 'Все тесты прошли успешно!'
         }
         failure {
-            echo '❌ Есть упавшие тесты'
+            echo 'Есть упавшие тесты'
         }
     }
 }
