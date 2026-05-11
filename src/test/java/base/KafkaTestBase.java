@@ -30,8 +30,8 @@ public class KafkaTestBase {
         consumer = new MessageConsumer(bootstrapServers, "test-group");
         topic = "test-topic-" + System.currentTimeMillis();
 
-        System.out.println("✅ Kafka контейнер запущен: " + bootstrapServers);
-        System.out.println("📨 Топик: " + topic);
+        System.out.println("Kafka контейнер запущен: " + bootstrapServers);
+        System.out.println("Топик: " + topic);
     }
 
     @AfterEach
@@ -39,11 +39,11 @@ public class KafkaTestBase {
     void tearDown() {
         if (producer != null) {
             producer.close();
-            System.out.println("🔒 Producer закрыт");
+            System.out.println("Producer закрыт");
         }
         if (consumer != null) {
             consumer.close();
-            System.out.println("🔒 Consumer закрыт");
+            System.out.println("Consumer закрыт");
         }
     }
 }
